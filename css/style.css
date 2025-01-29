@@ -1,0 +1,614 @@
+/*
+background: linear-gradient(130deg, #231a6f, #0f054c); 
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Csss */
+header {
+  padding: 15px;
+  background: linear-gradient(to right, #231a6f, #0f054c);
+  box-shadow: 0 0.5rem 16px rgb(0 0 0 / 15%);
+  position: fixed;
+  width: 100%;
+  z-index: 12;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.links-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: rgb(0, 187, 240);
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*=================================================================================
+                                    SECTION 1 HERO
+==================================================================================== */
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #231a6f, #0f054c);
+  display: flex;
+  align-items: center;
+}
+
+.hero .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introduction {
+  max-width: 500px;
+  color: #fff;
+}
+
+.introduction h1 {
+  width: 150px;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.introduction p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.img-wrap {
+  max-width: 500px;
+}
+
+.img-wrap img {
+  width: 100%;
+}
+
+.common-btn {
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  background-color: rgb(0, 187, 240);
+}
+
+.common-btn a {
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.common-btn:hover {
+  background-color: rgb(0, 127, 164);
+}
+
+/*/////////////////////////
+CSS FOR WAVEY SHAPE SVG
+/////////////////////// */
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(128% + 1.3px);
+  height: 245px;
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}
+
+/*=================================================================================
+                                    SECTION 2 SERVICES
+==================================================================================== */
+
+.services {
+  padding: 80px 0;
+}
+
+.services .container {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading-secondary {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.heading-secondary span {
+  color: rgb(0, 187, 240);
+}
+
+.heading p {
+  font-size: 18px;
+  margin: 20px 0 50px 0;
+}
+
+.services .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.cards {
+  width: 33.33333%;
+  padding: 20px;
+  background-color: #f8f8f9;
+}
+
+.cards img {
+  width: 65px;
+}
+
+.cards h3 {
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.cards p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.cards a {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 17px;
+  color: #000;
+}
+
+.cards a:hover {
+  color: #00bbf0;
+}
+
+.cards-common-btn {
+  margin: 45px 0 0 0;
+}
+
+/*=================================================================================
+                               SECTION 3 ABOUT US 
+================================================================================= */
+
+.work {
+  background-color: #00204a;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.work .inner {
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  width: 50%;
+}
+
+.right h3 {
+  margin: 10px 0;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.right p {
+  line-height: 1.8;
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+.left {
+  width: 50%;
+}
+.left img {
+  width: 100%;
+}
+
+/*=================================================================================
+                               SECTION 4 WHY CHOOSE US 
+================================================================================= */
+.why-us {
+  padding: 80px 0;
+}
+
+.why-us .inner {
+  text-align: center;
+}
+
+.img-box img {
+  width: 55px;
+}
+
+.why-us .box {
+  text-align: center;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box {
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid #00204a;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box h5 {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  line-height: 1.5;
+  font-size: 17px;
+  color: #666;
+}
+
+/*=================================================================================
+                               SECTION 5 OUR TEAM
+================================================================================= */
+
+.team {
+  background-color: #00204a;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.team .inner {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .box {
+  width: 25%;
+  margin-top: 45px;
+  padding: 35px 0 0 0;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #002759, #002b64);
+}
+
+.team-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-img-box img {
+  width: 120px;
+  border-radius: 100%;
+  border: 5px solid #fff;
+}
+
+.detail-box {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.detail-box h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #00bbf0;
+  text-transform: capitalize;
+}
+
+.detail-box p {
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.social-box {
+  display: flex;
+  padding: 10px 45px 20px;
+  justify-content: space-between;
+}
+
+.social-box a {
+  color: #fff;
+  font-size: 23px;
+}
+
+.social-box a:hover {
+  color: #00bbf0;
+}
+
+/*=================================================================================
+                               SECTION 6 TESTIMONIAL
+================================================================================= */
+
+.testimonial {
+  padding: 90px 0;
+}
+
+.item-detail {
+  background-color: #fff;
+  padding: 75px 25px 25px 25px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.item-box p {
+  margin-bottom: 16px;
+}
+
+.item {
+  display: flex;
+}
+
+.item-img {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  margin-bottom: -50px;
+  margin-left: 25px;
+  position: relative;
+}
+
+.item-img img {
+  border-radius: 100%;
+}
+
+.client-id {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-id img {
+  width: 17px;
+}
+
+.client-info h6 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.client-info p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.slide-btn {
+  display: flex;
+  margin-top: 45px;
+  justify-content: center;
+}
+
+.s-btn {
+  width: 55px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*=================================================================================
+                               SECTION 7 FOOTER
+================================================================================= */
+
+.footer {
+  color: #ffffff;
+  padding: 45px 0 15px 0;
+  background-color: #00204a;
+}
+
+.footer .inner {
+  display: flex;
+}
+
+.box-comman {
+  margin-bottom: 30px;
+  padding: 0 15px;
+  width: 25%;
+}
+
+.box-1 a:hover {
+  color: #00bbf0;
+}
+
+.box-comman h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact_link_box {
+  display: flex;
+  font-size: 17px;
+  flex-direction: column;
+}
+
+.contact_link_box a {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.contact_link_box a ion-icon {
+  margin-right: 5px;
+}
+
+.info_social {
+  margin: 20px 0;
+}
+
+.info_social a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.info-detail p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.info_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_links a {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.info_links a:hover {
+  color: #00bbf0;
+}
+
+.box-3 {
+  width: 16%;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 17px;
+}
+
+form button {
+  width: 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 55px;
+  font-size: inherit;
+  transition: all 0.3s;
+  background-color: #00bbf0;
+}
+
+form button:hover {
+  background-color: #007fa4;
+}
+
+.copyright {
+  font-size: 17px;
+  padding: 25px 0;
+  color: #4a4a4a;
+  text-align: center;
+  background-color: #fff;
+}
+
+.copyright a {
+  color: #00bbf0;
+}
+
+.copyright a:hover {
+  color: #007fa4;
+}
