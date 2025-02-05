@@ -262,6 +262,7 @@ CSS FOR WAVEY SHAPE SVG
 
 .work .inner {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -358,19 +359,33 @@ CSS FOR WAVEY SHAPE SVG
   margin-top: 45px;
   padding: 35px 0 0 0;
   border-radius: 5px;
+  transition: all 0.3s;
   background: linear-gradient(to bottom, #002759, #002b64);
 }
 
-.team-img-box {
+.team .box:hover {
+  transform: translateY(-10px);
+}
+
+.again {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.team-img-box {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
 .team-img-box img {
   width: 120px;
   border-radius: 100%;
-  border: 5px solid #fff;
+  transition: all 0.3s;
+}
+
+.team-img-box img:hover {
+  transform: scale(1.2);
 }
 
 .detail-box {
@@ -506,6 +521,10 @@ CSS FOR WAVEY SHAPE SVG
   width: 25%;
 }
 
+.box-1 a {
+  transition: all 0.3s;
+}
+
 .box-1 a:hover {
   color: #00bbf0;
 }
@@ -555,6 +574,7 @@ CSS FOR WAVEY SHAPE SVG
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
+  transition: all 0.3s;
 }
 
 .info_links a:hover {
@@ -603,6 +623,7 @@ form button:hover {
   color: #4a4a4a;
   text-align: center;
   background-color: #fff;
+  transition: all 0.3s;
 }
 
 .copyright a {
